@@ -1,0 +1,16 @@
+#Add Logs Directory
+cd
+mkdir logs
+
+#Add to Your Crontab
+sudo crontab -e		#This will bring up a crontab window
+
+#Now, enter the following lines at the end of the nano
+@reboot sh /home/chip/Romibo-V8/Bash_files/launcher1.sh >/home/chip/logs/cronlog 2>&1
+@reboot sh /home/chip/Romibo-V8/Bash_files/launcher2.sh >/home/chip/logs/cronlog2 2>&1
+@reboot sh /home/chip/Romibo-V8/Bash_files/launcher3.sh >/home/chip/logs/cronlog3 2>&1
+@reboot sh /home/chip/Romibo-V8/Bash_files/launcher4.sh >/home/chip/logs/cronlog4 2>&1
+
+#Do "Ctrl+x" to close the file, then do "y" to save the file, Finally press" Enter".
+
+#
