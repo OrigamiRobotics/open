@@ -1,4 +1,4 @@
 
-cd /home/chip/Romibo-V8/python
+cd /home/chip/open/python
 sudo python movement.py
 
