@@ -1,4 +1,4 @@
-cd /home/chip/Romibo-V8/python
+cd /home/chip/open/python
 sleep 30
 export DISPLAY=":0.0"
 #su chip -c "unclutter -display :0 -noevents -grab"
