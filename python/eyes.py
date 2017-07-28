@@ -166,7 +166,7 @@ label.place(x=20,y=100)
 
 # store as tk img_objects
 romibo_excited_pictures = it.cycle(tk.PhotoImage(file=img_name) for img_name in list_for_romibo_excited)
-romibo_indifferentShort_pictures = it.cycle(tk.PhotoImage(file=img_name) for img_name in list_for_romibo_indifferentShort)
+#romibo_indifferentShort_pictures = it.cycle(tk.PhotoImage(file=img_name) for img_name in list_for_romibo_indifferentShort)
 romibo_eyelidBlink_pictures = it.cycle(tk.PhotoImage(file=img_name) for img_name in list_for_romibo_eyelidBlink)
 #romibo_curious_pictures = it.cycle(tk.PhotoImage(file=img_name) for img_name in list_for_romibo_curious)
 romibo_normal_picture = tk.PhotoImage(file="/home/chip/Romibo-V8/romibo_normal_picture.png")
@@ -197,9 +197,9 @@ for i in range(0, blink_length):
 for i in range(0, excited_length):
     img = next(romibo_excited_pictures)
     print(img)
-for i in range(0, indifferentShort_length):
-    img = next(romibo_indifferentShort_pictures)
-    print(img)
+#for i in range(0, indifferentShort_length):
+#    img = next(romibo_indifferentShort_pictures)
+#    print(img)
 
 
 #for i in range(0, curious_length):

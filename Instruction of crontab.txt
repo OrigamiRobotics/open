@@ -12,5 +12,3 @@ sudo crontab -e		#This will bring up a crontab window
 @reboot sh /home/chip/Romibo-V8/Bash_files/launcher4.sh >/home/chip/logs/cronlog4 2>&1
 
 #Do "Ctrl+x" to close the file, then do "y" to save the file, Finally press" Enter".
-
-#
