@@ -32,16 +32,16 @@ cd
 
 #install MQTT for wifi connection
 sudo apt-get install dnsmasq 
-cd /home/chip/Romibo-V8/wifi
+cd /home/chip/open/wifi
 sudo cp access_point.conf /etc/dnsmasq.d
 sudo cp interfaces /etc/network
 cd /
 sudo /etc/init.d/dnsmasq restart 
-cd /home/chip/Romibo-V8/wifi
+cd /home/chip/open/wifi
 sudo cp hostapd.conf /etc
 cd /
 sudo hostapd /etc/hostapd.conf 
-cd /home/chip/Romibo-V8/wifi
+cd /home/chip/open/wifi
 sudo cp systemd.service /lib/systemd/system 
 cd /
 sudo update-rc.d hostapd disable 
@@ -54,6 +54,6 @@ systemctl status systemd
 sudo apt-get install unclutter
 
 #write cronjobs for running script on startup
-(sudo crontab -l; echo "@reboot sh /home/chip/Romibo-V8/Bash_files/launcher1.sh > /home/chip/Romibo-V8/logs/cronlog 2>&1";) | sudo crontab -
-(sudo crontab -l; echo "@reboot sh /home/chip/Romibo-V8/Bash_files/launcher2.sh > /home/chip/Romibo-V8/logs/cronlog2 2>&1";) | sudo crontab -
-(sudo crontab -l; echo "@reboot sh /home/chip/Romibo-V8/Bash_files/launcher3.sh > /home/chip/Romibo-V8/logs/cronlog3 2>&1";) | sudo crontab -
+(sudo crontab -l; echo "@reboot sh /home/chip/open/Bash_files/launcher1.sh > /home/chip/open/logs/cronlog 2>&1";) | sudo crontab -
+(sudo crontab -l; echo "@reboot sh /home/chip/open/Bash_files/launcher2.sh > /home/chip/open/logs/cronlog2 2>&1";) | sudo crontab -
+(sudo crontab -l; echo "@reboot sh /home/chip/open/Bash_files/launcher3.sh > /home/chip/open/logs/cronlog3 2>&1";) | sudo crontab -
